@@ -1,0 +1,44 @@
+#SHARE_KERNEL
+
+Assalamualaikum war wab
+
+ZTE B860H V5 / HG680FJ > WIFI ON
+
+Masuk link mega cari kernel 6.4.11-HG680FJ support
+
+lalu download semua file di folder WIFI, didalam nya ada 2 folder, firmware dan modules.
+isi folder modules ada mt7668s.ko, file ini di copas ke openwrt /lib/modules/6.4.11/
+
+lalu load driver dengan perintah 
+insmod /lib/modules/6.4.11/mt7668s.ko
+atau 
+modprobe mt7668s
+
+klo udah, buka kernel log di luci..
+geser paling bawah, ntar akan keluar log error, itu karena belum ada file firmware nya, 
+
+nah, challenge nya, paste kan semua file firmware di tempat yang bener,
+
+TIPS:
+
+load driver 
+insmod /lib/modules/6.4.11/mt7668s.ko
+atau 
+modprobe mt7668s
+
+unload driver 
+rmmod mt7668s
+
+jadi, unload dulu drivernya, lalu pastekan file firmwarenya, lalu driver di load lagi smp log gak error lagi dan wifi harusnya otomatis menyala,
+
+direktori nya ga sulit kok, tp emang tidak ditempat biasa, direktori ini dipake di stb x2 lainnya. 
+
+selamat mencoba bagi yang mau, 
+
+have a nice day...
+
+#berhubung banyak yang error saat download, sekalian tak encrypt link nya..decrypt key ada di bawahnya...
+
+https://mega.nz/folder/0sEmEBDA
+
+iO0GD5VFJLuiqFxrehjckA
